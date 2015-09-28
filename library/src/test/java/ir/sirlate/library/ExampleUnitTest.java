@@ -1,4 +1,4 @@
-package com.example.library;
+package ir.sirlate.library;
 
 import org.junit.Test;
 

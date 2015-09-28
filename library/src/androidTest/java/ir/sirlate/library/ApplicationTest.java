@@ -1,4 +1,4 @@
-package com.example.library;
+package ir.sirlate.library;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
