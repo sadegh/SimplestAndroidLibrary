@@ -27,10 +27,10 @@ afterEvaluate() { project ->
     uploadArchives {
         configuration = configurations.archives
         repositories.mavenDeployer {
-            beforeDeployment { MavenDeployment deployment -> signing.singPom(development) }
+            beforeDeployment { MavenDeployment deployment -> signing.signPom(deployment) }
 
             pom.groupId = GROUP
-//            pom.artifactId = POM_ARTIFACT_ID
+            pom.artifactId = POM_ARTIFACT_ID
             pom.version = VERSION_NAME
 
             repository(url: sonatypeRepositoryUrl()) {
@@ -42,27 +42,27 @@ afterEvaluate() { project ->
                 packaging POM_PACKAGING
                 description POM_DESCRIPTION
                 url POM_URL
-            }
 
-            scm {
-                url POM_SCM_URL
-                connection POM_SCM_CONNECTION
-                developerConnection POM_SCM_DEV_CONNECITON
-            }
-
-            licenses {
-                license {
-                    name POM_LICENSE_NAME
-                    url POM_LICENSE_URL
-                    distribution POM_LICENSE_DIST
+                scm {
+                    url POM_SCM_URL
+                    connection POM_SCM_CONNECTION
+                    developerConnection POM_SCM_DEV_CONNECTION
                 }
-            }
 
-            developers {
-                developer {
-                    id POM_DEVELOPER_ID
-                    name POM_DEVELOPER_NAME
-                    email POM_DEVELOPER_EMAIL
+                licenses {
+                    license {
+                        name POM_LICENCE_NAME
+                        url POM_LICENCE_URL
+                        distribution POM_LICENCE_DIST
+                    }
+                }
+
+                developers {
+                    developer {
+                        id POM_DEVELOPER_ID
+                        name POM_DEVELOPER_NAME
+                        email POM_DEVELOPER_EMAIL
+                    }
                 }
             }
         }
