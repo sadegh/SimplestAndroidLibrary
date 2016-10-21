@@ -1,11 +1,11 @@
 package ir.sirlate.library;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.os.PersistableBundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
 
-public class ToasterActivity extends Activity {
+public class ToasterActivity extends AppCompatActivity {
 
     @Override
     public void onCreate(Bundle savedInstanceState, PersistableBundle persistentState) {
