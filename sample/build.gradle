@@ -21,7 +21,9 @@ android {
         }
     }
     lintOptions {
-        abortOnError false
+        quiet true // set to true to turn off analysis progress reporting by lint
+        abortOnError false // if true, stop the gradle build if errors are found
+        ignoreWarnings true // if true, only report errors
     }
 }
 
