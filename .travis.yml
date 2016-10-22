@@ -15,6 +15,7 @@ android:
 licenses:
     - 'android-sdk-license-.+'
     - 'google-gdk-license-.+'
+    - '.+'
 
 branches:
   except:
