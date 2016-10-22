@@ -9,6 +9,6 @@ public class ToasterActivity extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Toast.makeText(this, "Hi! My name is: " + getClass().getSimpleName(), Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "Hey there! My name is: " + getClass().getSimpleName(), Toast.LENGTH_LONG).show();
     }
 }
