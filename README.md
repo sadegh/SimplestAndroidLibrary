@@ -1,4 +1,4 @@
-# SimplestAndroidLibrary
+# SimplestAndroidLibrary [![Build Status](https://travis-ci.org/sadegh/SimplestAndroidLibrary.png)](https://travis-ci.org/sadegh/SimplestAndroidLibrary)
 A sample android library which demonstrates how to push your library into the maven.
 
 # Usage
